@@ -3,7 +3,7 @@ import axios from 'axios';
 // Automatically shifts backend targets depending on your running environment
 const API_URL = import.meta.env.DEV 
   ? 'http://127.0.0.1:8000/api' 
-  : 'https://YOUR-BACKEND-RAILWAY-URL.up.railway.app/api'; 
+  : 'https://team-task-manager-production-26dc.up.railway.app/api'; 
 
 const getAuthHeaders = () => {
   const token = localStorage.getItem('token');
